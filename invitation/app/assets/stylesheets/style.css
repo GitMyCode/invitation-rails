@@ -1414,6 +1414,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 	color: #FFF;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 	border-top-color: rgba(0,0,0,0.1);
+
 }
 
 #primary-menu.sub-title > ul > li:hover span,
@@ -10634,8 +10635,9 @@ label.error { display: none !important; }
 	width: 100%;
 	top: 8px;
 	left: 30px;
-	height: 0;
+	height: 6px;
 	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
 }
 
 .divider.divider-thick:after,
@@ -10687,13 +10689,13 @@ label.error { display: none !important; }
 .divider.divider-center:before {
 	left: -50% !important;
 	right: 0;
-	margin-left: -20px;
+	margin-left: 0px;
 }
 
 .divider.divider-center:after {
 	left: 50% !important;
 	right: 0;
-	margin-left: 20px;
+	margin-left: 0px;
 }
 
 
@@ -10703,15 +10705,15 @@ label.error { display: none !important; }
 .divider.divider-center.divider-short:before {
 	left: auto !important;
 	right: 50%;
-	margin-right: 20px;
-	width: 15%;
+	margin-right: 0px;
+	width: 18%;
 }
 
 .divider.divider-center.divider-short:after {
 	left: 50% !important;
 	right: auto !important;
-	margin-left: 20px;
-	width: 15%;
+	margin-left: 0px;
+	width: 18%;
 }
 
 .divider.divider-center.divider-vshort:before,
@@ -11522,7 +11524,7 @@ body:not(.device-touch) .tagcloud a {
 .invitation-head {
 	position: relative;
 	line-height: 1;
-	font-size: 100px;
+	font-size: 140px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 }
 
@@ -11547,7 +11549,7 @@ body:not(.device-touch) .tagcloud a {
 .invitation-head .last-name h1 {
 	display: block;
 	margin-top: 10px;
-	font-size: 130px;
+	font-size: 150px;
 	font-weight: 400;
 	/*font-style: italic;
 	font-family: 'Crete Round', serif;*/

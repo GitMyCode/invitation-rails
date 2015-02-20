@@ -969,7 +969,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 .dark .divider:after,
 .dark .divider.divider-center:before,
-.dark .divider.divider-center.divider-short:before { border-top-color: rgba(255,255,255,0.1); }
+.dark .divider.divider-center.divider-short:before { border-top-color: rgba(255,255,255,0.1);  border-bottom-color: rgba(255,255,255,0.1);  }
 
 .dark .divider.divider-rounded,
 .dark .divider.divider-border { color: #999; }

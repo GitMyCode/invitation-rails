@@ -19,7 +19,7 @@
                        class:"form-control input-lg", placeholder:"Nombre de personnes avec vous" %>
   </div>
   <div class="col_full">
-    <%= f.select(:place , options_for_select(["Régina Assumpta", "Place des Arts","Les deux!"]),{include_blank: '--Présence--'},
+    <%= f.select(:place , options_for_select(["Place des Arts (Salle Claude-Léveillée)","Régina Assumpta (Salle Marguerite-Bourgeoys)","Les deux!"]),{include_blank: '--Présence--'},
                   { :id => "invitation-rsvp-events", :required => "", :class => "form-control input-lg"}) %>
   </div>
   <div class="col_full nobottommargin">
