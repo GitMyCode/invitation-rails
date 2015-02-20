@@ -3,14 +3,18 @@ class ReservationsController < ApplicationController
 
   # GET /reservations
   # GET /reservations.json
+=begin
   def index
     @reservations = Reservation.all
   end
+=end
 
   # GET /reservations/1
   # GET /reservations/1.json
+=begin
   def show
   end
+=end
 
   # GET /reservations/new
   def new
@@ -18,8 +22,10 @@ class ReservationsController < ApplicationController
   end
 
   # GET /reservations/1/edit
+=begin
   def edit
   end
+=end
 
   # POST /reservations
   # POST /reservations.json
@@ -39,6 +45,7 @@ class ReservationsController < ApplicationController
 
   # PATCH/PUT /reservations/1
   # PATCH/PUT /reservations/1.json
+=begin
   def update
     respond_to do |format|
       if @reservation.update(reservation_params)
@@ -60,6 +67,7 @@ class ReservationsController < ApplicationController
       format.json { head :no_content }
     end
   end
+=end
 
   private
     # Use callbacks to share common setup or constraints between actions.
