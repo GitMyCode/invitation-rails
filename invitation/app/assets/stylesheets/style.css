@@ -2624,6 +2624,7 @@ body.side-push-panel.side-panel-open:not(.device-xxs):not(.device-xs):not(.devic
 	overflow: hidden;
 }
 
+.part-screen {height: 70%;}
 .full-screen .swiper_wrapper { height: auto; }
 
 .swiper_wrapper .swiper-container {
@@ -11519,6 +11520,13 @@ body:not(.device-touch) .tagcloud a {
 	font-weight: 100;
 	letter-spacing: 3px;
 
+}
+.invitation-phrase h4{
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-style: italic;
+	margin-top: 85px;
+	color: #845b6d;
 }
 
 .invitation-head {
