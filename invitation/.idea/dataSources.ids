@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="Rails invitation: development" uuid="831c3c7e-0fd5-415f-be50-edba2c6e5f35">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails invitation: test" uuid="a7bdd130-205d-4f87-be4f-a6872dc4fc1b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source name="Rails invitation: production" uuid="38abf398-6e5a-4809-8771-b7e5cfbdd700">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

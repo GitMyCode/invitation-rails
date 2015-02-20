@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails invitation: development" uuid="831c3c7e-0fd5-415f-be50-edba2c6e5f35">
+      <first-sync>true</first-sync>
+      <user-name>dbadmin</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe3dfe4dffcdfe3dffedfebdffedfe3dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedff5dfeedfefdfecdfebdfffdfe6dffedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails invitation: test" uuid="a7bdd130-205d-4f87-be4f-a6872dc4fc1b">
+      <first-sync>true</first-sync>
+      <user-name>dbadmin</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe3dfe4dffcdfe3dffedfebdffedfe3dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedff5dfeedfefdfecdfebdfffdfe6dffedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+    <data-source name="Rails invitation: production" uuid="38abf398-6e5a-4809-8771-b7e5cfbdd700">
+      <first-sync>true</first-sync>
+      <user-name>invitation</user-name>
+      <user-password>df96df8fdf97df8adfefdfe4dffcdff1df8ddfe3dfe4dffcdfe3dffedfebdffedfe3dfe5dfe4dff5dfeedfebdffedfebdfe8dfebdff9dfefdff5dffadfebdff9dff9dffddfe5dff8dfeedf8ddff7df8adf8fdf94</user-password>
+    </data-source>
+  </component>
+</project>

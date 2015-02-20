@@ -1,12 +1,12 @@
 *.rbc
 capybara-*.html
 .rspec
-/log
-/tmp
-/db/*.sqlite3
-/public/system
-/coverage/
-/spec/tmp
+/invitation/log
+/invitation/tmp
+/invitation/db/*.sqlite3
+/invitation/public/system
+/invitation/coverage/
+/invitation/spec/tmp
 **.orig
 rerun.txt
 pickle-email-*.html
@@ -16,7 +16,7 @@ config/initializers/secret_token.rb
 config/secrets.yml
 
 ## Environment normalisation:
-/.bundle
+/invitation/.bundle
 /vendor/bundle
 
 # these should all be checked in to normalise the environment:
@@ -26,6 +26,8 @@ config/secrets.yml
 .rvmrc
 
 # if using bower-rails ignore default bower_components path bower.json files
-/vendor/assets/bower_components
+/invitation/vendor/assets/bower_components
 *.bowerrc
 bower.json
+
+/invitation/config/local_env.yml
