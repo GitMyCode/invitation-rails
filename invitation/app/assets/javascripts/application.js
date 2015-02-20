@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ./js/jquery
+//= require ./js/plugins
+//= require ./js/jquery.gmap
+//= require ./javascripts/main
 //= require turbolinks
 //= require_tree .
+
