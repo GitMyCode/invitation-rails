@@ -1,25 +1,29 @@
 <%= form_for @reservation, html: {class: "bottommargin-lg divcenter", style:"max-width: 500px;"} do |f| %>
-  <% if @reservation.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
+    <% if @reservation.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@reservation.errors.count, "error") %> prohibited this reservation from being saved:</h2>
 
-      <ul>
-      <% @reservation.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @reservation.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="col_full">
+      <%= f.text_field :name,  id: "invitation-rsvp-name", class: "form-control input-lg", placeholder: "Votre nom complet" %>
     </div>
-  <% end %>
+    <div class="col_full">
+      <%= f.number_field :nb_personne, min:"1", max:"10", id:"invitation-rsvp-guests", required:"",
+                         class:"form-control input-lg", placeholder:"Nombre de personnes avec vous" %>
+    </div>
+    <div class="col_full">
+      <%= f.text_field :email,  id:"invitation-rsvp-email", required:"",
+                       class:"form-control input-lg", placeholder:"Votre email" %>
+    </div>
 
-  <div class="col_full">
-    <%= f.text_field :name,  id: "invitation-rsvp-name", class: "form-control input-lg", placeholder: "Votre nom complet" %>
-  </div>
-  <div class="col_full">
-    <%= f.number_field :nb_personne, min:"1", max:"10", id:"invitation-rsvp-guests", required:"",
-                       class:"form-control input-lg", placeholder:"Nombre de personnes avec vous" %>
-  </div>
-
-  <div class="col_full nobottommargin">
-    <%= f.submit  name:"invitation-rsvp-submit", id:"invitation-rsvp-submit", class:"button button-3d btn-block nomargin button-dark button-xlarge",value:"Soumettre"%>
-  </div>
+    <div class="col_full nobottommargin">
+      <%= f.submit  name:"invitation-rsvp-submit", id:"invitation-rsvp-submit", class:"button button-3d btn-block nomargin button-dark button-xlarge",value:"Soumettre"%>
+    </div>
 <% end %>
