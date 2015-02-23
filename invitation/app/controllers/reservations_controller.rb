@@ -34,7 +34,7 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        format.html { redirect_to @reservation, notice: "La réservation c'est bien effectuée" }
+        format.html { redirect_to @reservation, notice: "Merci!" }
         format.json { render :show, status: :created, location: @reservation }
       else
         format.html { render :new }
