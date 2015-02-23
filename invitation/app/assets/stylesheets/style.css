@@ -11535,6 +11535,14 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 140px;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
 }
+@media only screen and (max-device-width: 480px) {
+    .invitation-head {
+        position: relative;
+        line-height: 1;
+        font-size: 100px;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.15);
+    }
+}
 
 .invitation-head .first-name,
 .invitation-head .last-name,
