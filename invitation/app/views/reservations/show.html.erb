@@ -1,19 +1,39 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @reservation.name %>
-</p>
+<div id="confirm-bg">
+  <img src="<%= asset_path('invitation/intro.jpg') %>" alt=""/>
+</div>
 
-<p>
-  <strong>Nb personne:</strong>
-  <%= @reservation.nb_personne %>
-</p>
+  <div class="container center clearfix vertical-middle ">
+    <div class="content-wrap">
+      <div class="style-msg2 successmsg transparent">
+        <div class="msgtitle panel-heading"><h1 id="notice"><%= notice %></h1></div>
+        <div class="sb-msg panel-body">
+          <ul class="confirm-info">
+            <li>
+              <p><strong>Nom:</strong>
+              <%= @reservation.name %></p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @reservation.email %>
-</p>
+            </li>
+            <li>
+              <p><strong>Nb personne:</strong>
+              <%= @reservation.nb_personne %></p>
+            </li>
+            <li>
+              <p><strong>Email:</strong>
+              <%= @reservation.email %></p>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+
+
 <!--
 
 <%= link_to 'Edit', edit_reservation_path(@reservation) %> |
