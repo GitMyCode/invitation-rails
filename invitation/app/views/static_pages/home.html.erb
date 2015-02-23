@@ -243,37 +243,11 @@
 
       </div>
 
-      <div id="google-map1" style="height: 500px;" class="gmap"></div>
+      <div class="notopmargin center" style="height: 500px;" >
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=13&scale=2&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:green%7C260,+Boulevard+de+Maisonneuve+Ouest" alt="Google Map of 260, Boulevard de Maisonneuve Ouest">
+      </div>
 
-      <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
-      <script type="text/javascript">
-
-          $('#google-map1').gMap({
-
-              address: 'Montréal, 260, Boulevard de Maisonneuve Ouest',
-              maptype: 'ROADMAP',
-              zoom: 15,
-              markers: [
-                  {
-                      address: '260, Boulevard de Maisonneuve Ouest ',
-                      html: 'Salle Claude-Léveillée de la Place des Arts. ' + "</br>" +
-                      "260, Boulevard de Maisonneuve Ouest"
-                  }
-              ],
-              doubleclickzoom: false,
-              controls: {
-                  panControl: false,
-                  zoomControl: true,
-                  mapTypeControl: false,
-                  scaleControl: false,
-                  streetViewControl: false,
-                  overviewMapControl: false
-              }
-
-          });
-
-      </script>
 
 
     </div>
