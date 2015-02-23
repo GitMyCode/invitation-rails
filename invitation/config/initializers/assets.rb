@@ -16,3 +16,4 @@ Rails.application.config.assets.precompile += %w( css/fonts.css )
 Rails.application.config.assets.precompile += %w( js/jquery.js )
 Rails.application.config.assets.precompile += %w( js/plugins.js )
 Rails.application.config.assets.precompile += %w( js/jquery.gmap.js )
+Rails.application.config.assets.precompile += ['css/fonts/*']
