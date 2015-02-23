@@ -24,6 +24,9 @@ module Invitation
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
+
+    # Ce code va prendre tout les Key| value dans le fichier local_env.yml et les rendre diponible
+    # dans le hash ENV
     config.before_configuration do
       env_file = File.join(Rails.root,'config','local_env.yml')
       YAML.load(File.open(env_file)).each do |key, value|
@@ -31,6 +34,9 @@ module Invitation
       end if File.exists?(env_file)
 
     end
+
+    config.assets.enabled = true
+    config.assets.paths << "#{Rails.root}/app/assets/stylesheets/css/fonts"
 
     config.active_record.raise_in_transactional_callbacks = true
 
