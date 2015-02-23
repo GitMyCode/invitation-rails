@@ -145,7 +145,7 @@
         </div>
 
 
-        <div id="portfolio" class="portfolio-nomargin clearfix" style="position: relative; height: 885px;">
+        <div id="" class="section nomargin clearfix" style="position: relative;">
 
 
           <iframe src="https://player.vimeo.com/video/114263474" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -154,39 +154,12 @@
           <p><br/><br/><br/></p>
 
           <iframe src="https://player.vimeo.com/video/118062346" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
+          <p><br/><br/><br/></p>
 
         </div>
 
 
-        <script type="text/javascript">
 
-            jQuery(window).load(function () {
-
-                var $container = $('#portfolio');
-
-                $container.isotope({
-                    transitionDuration: '0.65s',
-                    masonry: {
-                        columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
-                    }
-                });
-
-                $('#page-menu a').click(function () {
-                    $('#page-menu li').removeClass('current');
-                    $(this).parent('li').addClass('current');
-                    var selector = $(this).attr('data-filter');
-                    $container.isotope({filter: selector});
-                    return false;
-                });
-
-                $(window).resize(function () {
-                    $container.isotope('layout');
-                });
-
-            });
-
-        </script>
 
         <div class="clear"></div>
 
@@ -238,13 +211,15 @@
         <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
           <h2>Salle Claude-Léveillée</h2>
                     <span>Voici l'emplacement de la salle de spectacle Claude-Léveillée de la
-                      Place des Arts</span>
+                      Place des Arts <br/>
+                    260, Boulevard de Maisonneuve Ouest
+                    </span>
         </div>
 
       </div>
 
-      <div class="notopmargin center" style="height: 500px;" >
-        <img src="http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=13&scale=2&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:green%7C260,+Boulevard+de+Maisonneuve+Ouest" alt="Google Map of 260, Boulevard de Maisonneuve Ouest">
+      <div class="notopmargin center" style=" padding-bottom: 20px;" >
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=13&scale=2&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:red%7C260,+Boulevard+de+Maisonneuve+Ouest" alt="Google Map of 260, Boulevard de Maisonneuve Ouest">
       </div>
 
 
