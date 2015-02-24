@@ -87,3 +87,4 @@ production:
   username: invitation
   password: <%= ENV['INVITATION_DATABASE_PASSWORD'] %>
   port: 5432
+  pool: 1
