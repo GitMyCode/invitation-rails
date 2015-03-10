@@ -1,298 +1,244 @@
-
 <body class="stretched">
 
 <!-- Document Wrapper
 ============================================= -->
 <div id="wrapper" class="clearfix">
 
-    <div id="most-toppest"></div>
+  <div id="most-toppest"></div>
 
-    <section id="slider" class="slider-parallax full-screen page-section dark clearfix">
+  <section id="slider" class="slider-parallax full-screen page-section dark clearfix">
 
-        <div class="fslider" data-speed="2000" data-pause="6000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #2d2a2a;">
-            <div class="flexslider">
-                <div class="slider-wrap">
-                    <div class="slide full-screen force-full-screen" style="center: center; background-size: cover; height: 100% !important;"></div>
-                </div>
-            </div>
+    <div class="fslider" data-speed="2000" data-pause="6000" data-animation="fade" data-arrows="false" data-pagi="false" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; background-color: #2d2a2a;">
+      <div class="flexslider">
+        <div class="slider-wrap">
+          <div class="slide full-screen force-full-screen" style="center: center; background-size: cover; height: 100% !important;"></div>
         </div>
+      </div>
+    </div>
 
-        <div class="container vertical-middle dark center clearfix" style="z-index: 2;">
+    <div class="container vertical-middle dark center clearfix" style="z-index: 2;">
 
-            <div  id="invitation-head-title" class="invitation-head clearfix" >
-                <div class="first-name">Emma</div>
-                <div class="last-name">Johns</div>
-            </div>
+      <div id="invitation-head-title" class="invitation-head clearfix">
+        <div class="first-name">Emma</div>
+        <div class="last-name">Johns</div>
+      </div>
 
-            <div style="">
-                <div class="divider divider-short divider-center ">&nbsp</div>
+      <div style="">
+        <div class="divider divider-short divider-center ">&nbsp</div>
 
-            </div>
+      </div>
 
 
-            <h2 class="invitation-subhead"><span>LOCOMOTION </span> </h2>
+      <h2 class="invitation-subhead"><span>LOCOMOTION </span></h2>
 
-            <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter" style="max-width:700px;"></div>
+      <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter" style="max-width:700px;"></div>
 
-            <div class="invitation-phrase"><h4>Le premier album d'Emma Johns sortira le 3 mai prochain</h4></div>
+      <div class="invitation-phrase"><h4>Le premier album d'Emma Johns sortira le 3 mai prochain</h4></div>
 
-        </div>
+    </div>
 
-        <a href="#" data-scrollto="#section-couple" class="one-page-arrow"><i class="icon-angle-down infinite animated fadeInDown"></i></a>
+    <a href="#" data-scrollto="#section-events" class="one-page-arrow">
+      <i id="fleche" class="icon-angle-down infinite animated fadeInDown " style="font-size: 50px;"></i></a>
 
-        <script>
-            jQuery(document).ready( function($){
-                var newDate = new Date(2015, 5, 3);
-                $('#countdown-ex1').countdown({until: newDate});
-            });
-            jQuery(window).load(function(){
-                var t=setTimeout(function(){
-                    $( '.flexslider .slide' ).resize();
-                },500);
-            });
-        </script>
+    <script>
+        jQuery(document).ready(function ($) {
+            var newDate = new Date(2015, 5, 3);
+            $('#countdown-ex1').countdown({until: newDate});
+        });
+        jQuery(window).load(function () {
+            var t = setTimeout(function () {
+                $('.flexslider .slide').resize();
+            }, 500);
+        });
+    </script>
 
-    </section>
+  </section>
 
-    <!-- Header
-    ============================================= -->
-    <header id="header">
+  <!-- Header
+  ============================================= -->
+  <header id="header">
 
-        <div id="header-wrap">
+    <div id="header-wrap">
 
-            <div class="container clearfix">
+      <div class="container clearfix">
 
-                <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
+        <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                <div id="logo"></div>
+        <div id="logo"></div>
 
-                <!-- Primary Navigation
-                ============================================= -->
-                <nav id="primary-menu" class="style-2 center">
-
-                    <ul class="one-page-menu">
-                        <li><a href="#" data-href="#most-toppest"><div>Bienvenue</div></a></li>
-                      <li><a href="#" data-href="#section-events"><div>Lancement</div></a></li>
-                      <li><a href="#" data-href="#section-locomotion"><div>Locomotion</div></a></li>
-                      <li><a href="#" data-href="#section-bio"><div>Biographie</div></a></li>
-                        <li><a href="#" data-href="#section-rsvp"><div>RSVP</div></a></li>
-                        <li><a href="#" data-href="#section-locations"><div>La salle</div></a></li>
-                    </ul>
-
-                </nav><!-- #primary-menu end -->
-
-            </div>
-
-        </div>
-
-    </header><!-- #header end -->
-
-    <!-- Content
-    ============================================= -->
-    <section id="content">
-
-        <div class="content-wrap">
-
-            <div class="container clearfix">
-
-
-              <div id="section-events" class="heading-block title-center topmargin-lg page-section">
-                <h2>Lancement d'album</h2>
-                <span></span>
-              </div>
-
-              <div class="col_one_third">
-                <div class="feature-box center media-box fbox-bg">
-                  <div class="fbox-media">
-                    <img src="<%= asset_path 'invitation/IMG_3169.jpg' %>" alt="Image" >
-                  </div>
-                </div>
-              </div>
-              <div class="col_three_fifth" style="text-align: justify;">
-                La pianiste et compositrice Montréalaise Emma Johns sort son tout premier album <i>Locomotion!</i> <br/><br/>
-
-                Afin de célébrer l'accomplissement de ce premier album, Emma vous invite à un lancement officiel qui aura lieu le dimanche 3 mai, à 14h00, à la salle Claude-Léveillée de la Place des Arts. (métro place-des-arts). Elle offrira un concert inédit présentant ses compositions pour piano solo qui seront disponibles sur Locomotion.
-                <br/><br/>
-                Il y aura également une petite réception à la fin du concert durant laquelle vous aurez la chance de parler avec Emma et de vous procurer son album.
-                <br/><br/>
-                Le concert est gratuit et les places sont limitées. Il vous suffit simplement de réserver votre place en inscrivant votre nom au bas de cette page, à l'endroit prévu à cet effet.
-              </div>
-
-
-
-
-
-
-                <div class="clear"></div>
-
-                <div id="section-locomotion" class="heading-block center topmargin page-section">
-                    <h2>Locomotion</h2>
-                    <span>Un aperçu du projet</span>
-                </div>
-
-
-                <div id="portfolio" class="portfolio-nomargin clearfix" style="position: relative; height: 885px;">
-
-
-                    <iframe src="https://player.vimeo.com/video/114263474" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
-
-                    </iframe>
-                    <p><br/><br/><br/></p>
-
-                    <iframe src="https://player.vimeo.com/video/118062346" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
-
-
-
-
-
-
-                </div>
-
-
-
-
-
-
-
-
-                <script type="text/javascript">
-
-                    jQuery(window).load(function(){
-
-                        var $container = $('#portfolio');
-
-                        $container.isotope({
-                            transitionDuration: '0.65s',
-                            masonry: {
-                                columnWidth: $container.find('.portfolio-item:not(.wide)')[0]
-                            }
-                        });
-
-                        $('#page-menu a').click(function(){
-                            $('#page-menu li').removeClass('current');
-                            $(this).parent('li').addClass('current');
-                            var selector = $(this).attr('data-filter');
-                            $container.isotope({ filter: selector });
-                            return false;
-                        });
-
-                        $(window).resize(function() {
-                            $container.isotope('layout');
-                        });
-
-                    });
-
-                </script>
-
-                <div class="clear"></div>
-
-              <div id="section-bio" class="heading-block title-center page-section">
-                <h2>Biographie</h2>
-                <span></span>
-              </div>
-
-              <div class="col-md-12 bottommargin">
-                <div class="team team-list clearfix">
-                  <div class="team-image" style="width: 150px;">
-                    <img class="img-circle" src="<%= asset_path 'invitation/1.jpg' %>" alt="Emma Johns">
-                  </div>
-                  <div class="team-desc">
-                    <div class="team-title"><h4>Emma Johns</h4><span>pianiste</span></div>
-                    <div class="team-content">
-                        <i>À venir</i>
-                    </div>
-                    <div class="line topmargin-sm nobottommargin"></div>
-                    <a href="https://www.facebook.com/emmajohnspiano" class="social-icon si-borderless si-small si-facebook" title="Facebook">
-                      <i class="icon-facebook"></i>
-                      <i class="icon-facebook"></i>
-                    </a>
-                    <a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
-                      <i class="icon-instagram"></i>
-                      <i class="icon-instagram"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-
-                <div class="clear"></div>
-
-                <div class="section notopmargin footer-stick">
-                    <div class="container clearfix">
-
-                        <div id="section-rsvp" class="heading-block title-center topmargin page-section">
-                            <h2>RSVP</h2>
-                            <span>Vous êtes invités à inscrire votre nom ci-bas afin de confirmer votre présence au lancement</span>
-                        </div>
-
-                        <%= render 'reservations/form' %>
-
-                    </div>
-                </div>
-
-
-
-
-                <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
-                    <h2>Salle Claude-Léveillée</h2>
-                    <span>Voici l'emplacement de la salle de spectacle Claude-Léveillée de la
-                      Place des Arts</span>
-            </div>
-
-            </div>
-
-            <div id="google-map1" style="height: 500px;" class="gmap"></div>
-
-            <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-
-            <script type="text/javascript">
-
-                $('#google-map1').gMap({
-
-                    address: 'Montréal, 260, Boulevard de Maisonneuve Ouest',
-                    maptype: 'ROADMAP',
-                    zoom: 15,
-                    markers: [
-                        {
-                            address: '260, Boulevard de Maisonneuve Ouest ',
-                            html: 'Salle Claude-Léveillée de la Place des Arts. '+ "</br>"+
-                            "260, Boulevard de Maisonneuve Ouest"
-                        }
-                    ],
-                    doubleclickzoom: false,
-                    controls: {
-                        panControl: false,
-                        zoomControl: true,
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        streetViewControl: false,
-                        overviewMapControl: false
-                    }
-
-                });
-
-            </script>
-
-
-
-        </div>
-
-    </section><!-- #content end -->
-
-    <!-- Footer
-    ============================================= -->
-    <footer id="footer" class="dark">
-
-        <!-- Copyrights
+        <!-- Primary Navigation
         ============================================= -->
+        <nav id="primary-menu" class="style-2 center">
 
-    </footer><!-- #footer end -->
+          <ul class="one-page-menu">
+            <li><a href="#" data-href="#most-toppest">
+              <div>Bienvenue</div>
+            </a></li>
+            <li><a href="#" data-href="#section-events">
+              <div>Lancement</div>
+            </a></li>
+            <li><a href="#" data-href="#section-locomotion">
+              <div>Locomotion</div>
+            </a></li>
+            <li><a href="#" data-href="#section-bio">
+              <div>Biographie</div>
+            </a></li>
+            <li><a href="#" data-href="#section-rsvp">
+              <div>RSVP</div>
+            </a></li>
+            <li><a href="#" data-href="#section-locations">
+              <div>La salle</div>
+            </a></li>
+          </ul>
 
-</div><!-- #wrapper end -->
+        </nav>
+        <!-- #primary-menu end -->
+
+      </div>
+
+    </div>
+
+  </header>
+  <!-- #header end -->
+
+  <!-- Content
+  ============================================= -->
+  <section id="content">
+
+    <div class="content-wrap">
+
+      <div class="container clearfix">
+
+
+        <div id="section-events" class="heading-block title-center topmargin-lg page-section">
+          <h2>Lancement d'album</h2>
+          <span></span>
+        </div>
+
+        <div class="col_one_third">
+          <div class="feature-box center media-box fbox-bg">
+            <div class="fbox-media">
+              <img src="<%= asset_path 'invitation/IMG_3169.jpg' %>" alt="Image">
+            </div>
+          </div>
+        </div>
+        <div class="col_three_fifth" style="text-align: justify;">
+          La pianiste et compositrice Montréalaise Emma Johns sort son tout premier album <i>Locomotion!</i> <br/><br/>
+
+          Afin de célébrer l'accomplissement de ce premier album, Emma vous invite à un lancement officiel qui aura lieu
+          le dimanche 3 mai, à 14h00, à la salle Claude-Léveillée de la Place des Arts. (métro place-des-arts). Elle
+          offrira un concert inédit présentant ses compositions pour piano solo qui seront disponibles sur Locomotion.
+          <br/><br/>
+          Il y aura également une petite réception à la fin du concert durant laquelle vous aurez la chance de parler
+          avec Emma et de vous procurer son album.
+          <br/><br/>
+          Le concert est gratuit et les places sont limitées. Il vous suffit simplement de réserver votre place en
+          inscrivant votre nom au bas de cette page, à l'endroit prévu à cet effet.
+        </div>
+
+
+        <div class="clear"></div>
+
+        <div id="section-locomotion" class="heading-block center topmargin page-section">
+          <h2>Locomotion</h2>
+          <span>Un aperçu du projet</span>
+        </div>
+
+
+        <div id="" class="section nomargin clearfix" style="position: relative;">
+
+         <iframe src="//player.vimeo.com/video/114263474" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+          <p><br/><br/><br/></p>
+          <iframe src="//player.vimeo.com/video/118062346" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <p><br/><br/><br/></p>
+
+        </div>
+
+
+
+
+        <div class="clear"></div>
+
+        <div id="section-bio" class="heading-block title-center page-section">
+          <h2>Biographie</h2>
+          <span></span>
+        </div>
+
+        <div class="col-md-12 bottommargin">
+          <div class="team team-list clearfix">
+            <div class="team-image" style="width: 150px;">
+              <img class="img-circle" src="<%= asset_path 'invitation/1.jpg' %>" alt="Emma Johns">
+            </div>
+            <div class="team-desc">
+              <div class="team-title"><h4>Emma Johns</h4><span>pianiste</span></div>
+              <div class="team-content">
+                <i>À venir</i>
+              </div>
+              <div class="line topmargin-sm nobottommargin"></div>
+              <a href="https://www.facebook.com/emmajohnspiano" class="social-icon si-borderless si-small si-facebook" title="Facebook">
+                <i class="icon-facebook"></i>
+                <i class="icon-facebook"></i>
+              </a>
+              <a href="#" class="social-icon si-borderless si-small si-instagram" title="Instagram">
+                <i class="icon-instagram"></i>
+                <i class="icon-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="clear"></div>
+
+        <div class="section notopmargin footer-stick">
+          <div class="">
+
+            <div id="section-rsvp" class="heading-block title-center topmargin page-section">
+              <h2>RSVP</h2>
+              <span>Vous êtes invités à inscrire votre nom ci-bas afin de confirmer votre présence au lancement</span>
+            </div>
+
+            <%= render 'reservations/form' %>
+
+          </div>
+        </div>
+
+
+        <div id="section-locations" class="heading-block title-center topmargin-lg page-section">
+          <h2>Salle Claude-Léveillée</h2>
+                    <span>Voici l'emplacement de la salle de spectacle Claude-Léveillée de la
+                      Place des Arts <br/>
+                    260, Boulevard de Maisonneuve Ouest
+                    </span>
+        </div>
+
+      </div>
+
+      <div class="notopmargin center" style=" padding-bottom: 20px;" >
+        <img src="http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=13&scale=2&size=600x300&maptype=roadmap&sensor=false&format=png&visual_refresh=true&markers=size:mid%7Ccolor:red%7C260,+Boulevard+de+Maisonneuve+Ouest" alt="Google Map of 260, Boulevard de Maisonneuve Ouest">
+      </div>
+
+
+
+
+    </div>
+
+  </section>
+  <!-- #content end -->
+
+  <!-- Footer
+  ============================================= -->
+  <footer id="footer" class="dark">
+
+    <!-- Copyrights
+    ============================================= -->
+
+  </footer>
+  <!-- #footer end -->
+
+</div>
+<!-- #wrapper end -->
 
 <!-- Go To Top
 ============================================= -->

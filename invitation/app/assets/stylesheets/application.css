@@ -14,3 +14,46 @@
  *= require_tree .
  *= require_self
  */
+
+/* ----------------------------------------------------------------
+    confirmation page
+-----------------------------------------------------------------*/
+
+.style-msg2 h1, p {
+    text-shadow: none !important;
+}
+
+.confirm-info li{
+    padding: 20px;
+    list-style-type:none;
+}
+.confirm-info li p {
+    font-size: 20px;
+    color: #e5ded7;
+}
+
+#confirm-bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+#confirm-bg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.transparent {
+    background:rgba(45, 42, 42, 0.50) !important;
+    box-shadow: 10px 10px 15px #000;
+}
+h1#notice {
+    color: #e5ded7;
+    font-family: 'css/fonts/Oranienbaum.ttf', sans-serif;
+}

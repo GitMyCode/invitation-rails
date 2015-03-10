@@ -1,0 +1,17 @@
+﻿Correction font-icon tentative 1
+
+J'ai ajouter le dossier font manuelement dans la varialbe path
+Cette ligne dans Application.rb   : config.assets.paths << "#{Rails.root}/app/assets/stylesheets/css/fonts"
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch fix-mobile
+# Changes to be committed:
+#	modified:   .idea/invitation.iml
+#	modified:   .idea/runConfigurations/Production__invitation.xml
+#	modified:   .idea/workspace.xml
+#	modified:   app/assets/stylesheets/style.css
+#	modified:   config/application.rb
+#
+
