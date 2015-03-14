@@ -1,4 +1,36 @@
 
+
+
+
+<style>
+
+    ul.confirm-info li p {
+        margin-bottom: 5px;
+    }
+    @media (max-device-width: 480px) {
+
+
+
+        .confirm-info li p{
+            font-size: 14px;
+            /* equivalent to 16px */
+            line-height: 1.375;
+            /* equivalent to 22px */
+        }
+        ul.confirm-info {
+            padding: 0;
+            margin: 0;
+        }
+        ul.confirm-info li {
+            padding: 0;
+            padding-bottom: 50px;
+        }
+
+
+    }
+</style>
+
+
 <div id="confirm-bg">
   <img src="<%= asset_path('invitation/intro.jpg') %>" alt=""/>
 </div>
@@ -10,17 +42,17 @@
         <div class="sb-msg panel-body">
           <ul class="confirm-info">
             <li>
-              <p><strong>Nom:</strong>
-              <%= @reservation.name %></p>
+              <p><strong>Nom:</strong></p>
+              <p><%= @reservation.name %></p>
 
             </li>
             <li>
-              <p><strong>Nb personne:</strong>
-              <%= @reservation.nb_personne %></p>
+              <p><strong>Nb personne:</strong></p>
+              <p><%= @reservation.nb_personne %></p>
             </li>
             <li>
-              <p><strong>Email:</strong>
-              <%= @reservation.email %></p>
+              <p><strong>Email:</strong></p>
+              <p><%= @reservation.email %></p>
             </li>
 
           </ul>
