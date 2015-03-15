@@ -1,49 +1,50 @@
-
-
-
-
 <style>
 
     ul.confirm-info li p {
         margin-bottom: 5px;
     }
+
     a:hover {
         background-color: transparent;
         text-decoration: none;
     }
 
-    .button-retour{
+    .button-retour {
         color: rgb(229, 222, 215);
         position: relative;
         top: 31%;
         left: 15px;
         text-shadow: none;
     }
-    .button-retour:hover{
+
+    .button-retour:hover {
         color: #845b6d;
         cursor: pointer;
     }
 
-    .button-container{
+    .button-container {
         margin-top: -15px;
         margin-left: -15px;
         position: absolute;
         padding-right: 30px;
         height: 100%;
         border-right: 2px solid black;
-        background:rgba(0, 0, 0, 0.30) !important;
+        background: rgba(0, 0, 0, 0.30) !important;
     }
+
     .msgtitle.panel-heading {
-        position:relative;
+        position: relative;
     }
 
     .successmsg p {
         font-family: 'css/fonts/Oranienbaum.ttf', sans-serif;
     }
-    div.msgtitle.panel-heading{
+
+    div.msgtitle.panel-heading {
         height: 50px;
     }
-    div#notice-reservation{
+
+    div#notice-reservation {
         font-size: 5em;
         color: #000000;
         text-shadow: none;
@@ -51,27 +52,24 @@
 
     }
 
-
-
     @media (max-device-width: 480px) {
 
-
-
-        .confirm-info li p{
+        .confirm-info li p {
             font-size: 14px;
             /* equivalent to 16px */
             line-height: 1.375;
             /* equivalent to 22px */
         }
+
         ul.confirm-info {
             padding: 0;
             margin: 0;
         }
+
         ul.confirm-info li {
             padding: 0;
             padding-bottom: 50px;
         }
-
 
     }
 
@@ -82,15 +80,16 @@
   <img src="<%= asset_path('invitation/intro.jpg') %>" alt=""/>
 </div>
 
-  <div class="container center clearfix vertical-middle ">
-    <div class="content-wrap">
-      <div id="notice-reservation">Merci!<%= notice %></div>
+<div class="container center clearfix vertical-middle ">
+  <div class="container">
+    <div class="row col-md-12">
+      <div id="notice-reservation"><%= notice %></div>
       <div class="style-msg2 successmsg transparent">
         <div class="msgtitle panel-heading">
           <div class="button-container">
 
             <a href="<%= root_path %>">
-              <span class="button-retour" >
+              <span class="button-retour">
                <i class="icon-chevron-left"></i>
               Retour
             </span>
@@ -102,26 +101,30 @@
           <ul class="confirm-info">
             <li>
               <p><strong>NOM:</strong></p>
+
               <p><%= @reservation.name %></p>
 
             </li>
             <li>
               <p><strong>INVITÉS:</strong></p>
+
               <p><%= @reservation.nb_personne %></p>
             </li>
             <li>
               <p><strong>EMAIL:</strong></p>
+
               <p><%= @reservation.email %></p>
             </li>
 
           </ul>
         </div>
       </div>
-
     </div>
 
-
   </div>
+
+
+</div>
 </div>
 
 

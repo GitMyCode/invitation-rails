@@ -30,7 +30,9 @@
 
 
       <h2 class="invitation-subhead"><span>LOCOMOTION </span></h2>
+
       <p class="invitation-subhead">Le premier album d'Emma Johns sortira le 3 mai prochain</p>
+
       <div id="countdown-ex1" class="countdown countdown-large coming-soon divcenter" style="max-width:700px;"></div>
       <div class="invitation-phrase"><h4>Réservez votre place ci-bas</h4></div>
 
@@ -42,7 +44,7 @@
 
     <script>
         jQuery(document).ready(function ($) {
-            var newDate = new Date(2015, 4, 3,14,0,0,0);
+            var newDate = new Date(2015, 4, 3, 14, 0, 0, 0);
             $('#countdown-ex1').countdown({until: newDate});
         });
         jQuery(window).load(function () {
@@ -147,15 +149,13 @@
 
         <div id="" class="section nomargin clearfix" style="position: relative;">
 
-         <iframe src="//player.vimeo.com/video/114263474" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe src="//player.vimeo.com/video/114263474" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
           <p><br/><br/><br/></p>
           <iframe src="//player.vimeo.com/video/118062346" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
           <p><br/><br/><br/></p>
 
         </div>
-
-
 
 
         <div class="clear"></div>
@@ -213,16 +213,12 @@
       </div>
 
 
-
-
-      <div class="notopmargin center" style=" padding-bottom: 20px;" >
+      <div class="notopmargin center" style=" padding-bottom: 20px;">
         <div class="map">
 
         </div>
 
       </div>
-
-
 
 
     </div>
@@ -255,33 +251,43 @@
     //http://jsfiddle.net/ZnGpb/1/
     function get_static_style(styles) {
         var result = [];
-        styles.forEach(function(v, i, a){
+        styles.forEach(function (v, i, a) {
 
-            var style='';
-            if( v.stylers ) { // only if there is a styler object
+            var style = '';
+            if (v.stylers) { // only if there is a styler object
                 if (v.stylers.length > 0) { // Needs to have a style rule to be valid.
                     style += (v.hasOwnProperty('featureType') ? 'feature:' + v.featureType : 'feature:all') + '|';
                     style += (v.hasOwnProperty('elementType') ? 'element:' + v.elementType : 'element:all') + '|';
-                    v.stylers.forEach(function(val, i, a){
+                    v.stylers.forEach(function (val, i, a) {
                         var propertyname = Object.keys(val)[0];
                         var propertyval = val[propertyname].toString().replace('#', '0x');
                         style += propertyname + ':' + propertyval + '|';
                     });
                 }
             }
-            result.push('style='+encodeURIComponent(style));
+            result.push('style=' + encodeURIComponent(style));
         });
 
         return result.join('&');
     }
 
 
+    var mapStyle = [{
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [{"lightness": 100}, {"visibility": "simplified"}]
+    }, {
+        "featureType": "water",
+        "elementType": "geometry",
+        "stylers": [{"visibility": "on"}, {"color": "#C6E2FF"}]
+    }, {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [{"color": "#C5E3BF"}]
+    }, {"featureType": "road", "elementType": "geometry.fill", "stylers": [{"color": "#D1D1B8"}]}];
 
-    var mapStyle = [{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#C6E2FF"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"color":"#C5E3BF"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"color":"#D1D1B8"}]}];
-
-    var src = get_static_style( mapStyle );
-    $(".map").append("<img src=\"http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=17&size=1000x600&feature=all&maptype=roadmap&sensor=false&format=jpeg&visual_refresh=true&markers=size:mid%7Ccolor:red%7C260,+Boulevard+de+Maisonneuve+Ouest&"+src+"\">");
-
+    var src = get_static_style(mapStyle);
+    $(".map").append("<img src=\"http://maps.googleapis.com/maps/api/staticmap?center=260,+Boulevard+de+Maisonneuve+Ouest&zoom=17&size=1000x600&feature=all&maptype=roadmap&sensor=false&format=jpeg&visual_refresh=true&markers=size:mid%7Ccolor:red%7C260,+Boulevard+de+Maisonneuve+Ouest&" + src + "\">");
 
 
 </script>
