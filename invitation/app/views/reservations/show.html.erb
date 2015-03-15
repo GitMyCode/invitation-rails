@@ -7,6 +7,52 @@
     ul.confirm-info li p {
         margin-bottom: 5px;
     }
+    a:hover {
+        background-color: transparent;
+        text-decoration: none;
+    }
+
+    .button-retour{
+        color: rgb(229, 222, 215);
+        position: relative;
+        top: 31%;
+        left: 15px;
+        text-shadow: none;
+    }
+    .button-retour:hover{
+        color: #845b6d;
+        cursor: pointer;
+    }
+
+    .button-container{
+        margin-top: -15px;
+        margin-left: -15px;
+        position: absolute;
+        padding-right: 30px;
+        height: 100%;
+        border-right: 2px solid black;
+        background:rgba(0, 0, 0, 0.30) !important;
+    }
+    .msgtitle.panel-heading {
+        position:relative;
+    }
+
+    .successmsg p {
+        font-family: 'css/fonts/Oranienbaum.ttf', sans-serif;
+    }
+    div.msgtitle.panel-heading{
+        height: 50px;
+    }
+    div#notice-reservation{
+        font-size: 5em;
+        color: #000000;
+        text-shadow: none;
+        margin-bottom: 10px;
+
+    }
+
+
+
     @media (max-device-width: 480px) {
 
 
@@ -28,6 +74,7 @@
 
 
     }
+
 </style>
 
 
@@ -37,21 +84,33 @@
 
   <div class="container center clearfix vertical-middle ">
     <div class="content-wrap">
+      <div id="notice-reservation">Merci!<%= notice %></div>
       <div class="style-msg2 successmsg transparent">
-        <div class="msgtitle panel-heading"><h1 id="notice"><%= notice %></h1></div>
+        <div class="msgtitle panel-heading">
+          <div class="button-container">
+
+            <a href="<%= root_path %>">
+              <span class="button-retour" >
+               <i class="icon-chevron-left"></i>
+              Retour
+            </span>
+            </a>
+          </div>
+
+        </div>
         <div class="sb-msg panel-body">
           <ul class="confirm-info">
             <li>
-              <p><strong>Nom:</strong></p>
+              <p><strong>NOM:</strong></p>
               <p><%= @reservation.name %></p>
 
             </li>
             <li>
-              <p><strong>Nb personne:</strong></p>
+              <p><strong>INVITÉS:</strong></p>
               <p><%= @reservation.nb_personne %></p>
             </li>
             <li>
-              <p><strong>Email:</strong></p>
+              <p><strong>EMAIL:</strong></p>
               <p><%= @reservation.email %></p>
             </li>
 

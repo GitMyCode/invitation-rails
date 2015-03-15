@@ -1,0 +1,27 @@
+﻿Changement page reservation
+
+* permalink
+* ajout permalink dans le model
+* gossage louche dans le css pour un autre look dans la page confirmation
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	modified:   invitation/.idea/invitation.iml
+#	modified:   invitation/.idea/workspace.xml
+#	modified:   invitation/app/assets/stylesheets/application.css
+#	modified:   invitation/app/controllers/reservations_controller.rb
+#	modified:   invitation/app/models/reservation.rb
+#	modified:   invitation/app/views/reservations/show.html.erb
+#	modified:   invitation/app/views/static_pages/home.html.erb
+#	new file:   invitation/db/migrate/20150315004345_add.rb
+#	modified:   invitation/db/schema.rb
+#
+# Untracked files:
+#	ylkjkls3.w3l.txt
+#
+

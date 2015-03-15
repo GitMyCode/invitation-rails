@@ -53,7 +53,7 @@
     background:rgba(45, 42, 42, 0.50) !important;
     box-shadow: 10px 10px 15px #000;
 }
-h1#notice {
+h2#notice {
     color: #e5ded7;
     font-family: 'css/fonts/Oranienbaum.ttf', sans-serif;
 }
