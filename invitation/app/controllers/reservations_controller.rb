@@ -31,7 +31,9 @@ class ReservationsController < ApplicationController
   # POST /reservations.json
   def create
     @reservation = Reservation.new(reservation_params)
-
+    if @reservation.nb_personne.blank? || !@reservation.nb_personne.between?(0,100)
+      @reservation.nb_personne = 0;
+    end
     respond_to do |format|
       if @reservation.save
         format.html { redirect_to @reservation, notice: "Merci!" }
