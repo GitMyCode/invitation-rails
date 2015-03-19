@@ -11,10 +11,11 @@ class ReservationsController < ApplicationController
 
   # GET /reservations/1
   # GET /reservations/1.json
-=begin
-  def show
+
+  def showall
+    @reservations = Reservation.all
   end
-=end
+
 
   # GET /reservations/new
   def new
